@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-chrome", // ← VS Code 標準の Chrome デバッガー
+      "request": "launch",
+      "name": "Chrome: IncognitoでNext.js起動",
+      "url": "http://localhost:3000", // Next.js 開発サーバーの URL
+      "webRoot": "${workspaceFolder}",
+      "runtimeArgs": [
+        "--incognito" // ← Incognito モードで起動
+      ]
+    }
+  ]
+}
